@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127181252-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-127181252-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>My site portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" href="style/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--Подключаем animate.css для анимации-->
+    <link rel="stylesheet" href="libs/animate-css/animate.css">
+    <!--Подключение файла стилей для модального окна-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat:400,700|Russo+One&amp;subset=cyrillic" rel="stylesheet">
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?159"></script>
+    <!-- Yandex.Metrika counter --> 
+    <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter50647831 = new Ya.Metrika2({ id:50647831, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/50647831" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+    <!-- /Yandex.Metrika counter -->
+</head>
+<body>
+    <!-- *******************************************
+        HEADER
+     ***************************************** -->
+     <header class="header">
+         <div class="header-title wow fadeInUp">Иван Пластун</div>
+         <div class="header-slogan wow fadeInUp">Верстка сайтов на HTML и CSS<br>HTML5 CSS3 JS jQuery</div>
+         <div><a href="#ex1" rel="modal:open" class="button  wow fadeInUp">Перезвоните мне</a></div>
+         <!-- Modal HTML embedded directly into document -->
+        <div id="ex1" class="modal animated zoomIn">
+            <form action="php/callback.php" class="contact_form contact_form--modal" method="POST">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Site portfolio">
+                <input type="hidden" name="admin_email" value="linkolnwar@yandex.ru">
+                <input type="hidden" name="email_from" value="info@neomatrix.zzz.com.ua">
+                <input type="hidden" name="form_subject" value="Сообщение с моего сайта портфолио">
+                <!-- END Hidden Required Fields -->
+                <h2>Заполните заявку</h2>
+                <div class="subtitle">и мы свяжемся с вами</div>
+                <label for="f_name">Имя:</label>
+                <input type="text" id="f_name" name="Имя" autocomplete="off" placeholder="Введите имя" required>
+                <label for="f_phone">Телефон:</label>
+                <input type="text" id="f_phone" name="Телефон" placeholder="+7(___) ___-____"  autocomplete="off" type="tel" required>
+                <input class="sendbutton" type="submit" value="Обратный звонок">
+            </form>
+        </div>
+        <a href="#porfolio" class="header-arrow wow fadeInDown"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+     </header>
+     <!-- *******************************************
+        PORTFOLIO
+     ***************************************** -->
+     <main id="porfolio" role="main" class="portfolio">
+         <div class="container">
+           <div class="title">
+               Портфолио
+           </div>
+            <div class="row wow fadeInLeft">
+               <!--Работа в портфолио-->
+                <div class="col-4">
+                    <div class="portfolio-item">
+                         <div class="portfolio-img">
+                             <img src="image/project_organica.jpg" alt="Макет Органика">
+                         </div>
+                         <div class="portfolio-title">
+                            <a href="work-organika.html">Макет Органика</a>
+                         </div>
+                         <div class="portfolio-description">
+                             <p>Верстка одностраничного сайта по PSD макету.</p>
+                         </div>
+                     </div>
+                 </div>
+                 <!-- //Работа в портфолио-->
+                 <!--Работа в портфолио-->
+                 <div class="col-4">
+                    <div class="portfolio-item">
+                         <div class="portfolio-img">
+                             <img src="image/project_apollo.jpg" alt="Макет Органика">
+                         </div>
+                         <div class="portfolio-title">
+                            <a href="work-applo.html">Учебный макет Аполло</a>
+                         </div>
+                         <div class="portfolio-description">
+                             <p>Верстка лендинга хостинг компании. Мобильная адаптивность.</p>
+                         </div>
+                     </div>
+                 </div>
+                 <!-- //Работа в портфолио-->
+                 <!--Работа в портфолио-->
+                 <div class="col-4">
+                    <div class="portfolio-item">
+                         <div class="portfolio-img">
+                             <img src="image/project_portfolio.jpg" alt="Макет Органика">
+                         </div>
+                         <div class="portfolio-title">
+                            <a href="work-portfolio.html">Личный сайт портфолио</a>
+                         </div>
+                         <div class="portfolio-description">
+                             <p>Верстка личного сайта портфолио на котором вы сейчас находитесь.</p>
+                         </div>
+                     </div>
+                 </div>
+                 <!-- //Работа в портфолио-->
+             </div>
+             
+         </div>
+     </main>
+     <!-- *******************************************
+        FOOTER
+     ***************************************** -->
+    <footer class="footer">
+         <div class="container">
+             <div class="row wow fadeInRight">
+                 <div class="col-4">
+                   <p class="footer-name"> Иван Пластун</p>
+                   <p>HTML верстка и разработка сайтов</p>
+                 </div>
+                 <div class="col-4">
+                    <p class="footer-social">Мои профили в социальных сетях:</p>
+                    <p class="footer-social-icons">
+                        <a href="#" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </p>
+                 </div>
+                 <div class="col-4">
+                    <div><a href="https://vk.com/id127490572" class="button" target="_blank">связаться Вконтакте</a></div>
+                    <p>Напишите мне, чтобы заказать<br> или узнать стоимость верстки вашего проекта</p>
+                    <a href="contact.html" class="link">Отправить сообщение</a>
+                 </div>
+             </div>
+         </div>
+    </footer>
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <!--wow.min-js для эффектов анимации animate.css-->
+    <script src="libs/wow-js/wow.min.js"></script>
+    <!--Подключение плагина maskedinput.min.js-->
+    <script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Chatra {literal} -->
+    <script>
+        (function(d, w, c) {
+            w.ChatraID = 'mavhxw5hgzHYeAgZF';
+            var s = d.createElement('script');
+            w[c] = w[c] || function() {
+                (w[c].q = w[c].q || []).push(arguments);
+            };
+            s.async = true;
+            s.src = 'https://call.chatra.io/chatra.js';
+            if (d.head) d.head.appendChild(s);
+        })(document, window, 'Chatra');
+    </script>
+    <!-- /Chatra {/literal} -->
+</body>
+</html>
